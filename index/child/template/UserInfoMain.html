@@ -1,0 +1,97 @@
+<div class="layout_wrap">
+    <form id="form" class="shine_form">
+        <div class="title_btn_group">
+            <h5 class="section pull-left">基本信息</h5>
+            <button type="button" class="btn btn-edit pull-right" id="editBtn"><i class="fa fa-edit"></i> 修改</button>
+            <button type="button" class="btn btn-save pull-right hide_btn" id="saveBtn"><i class="fa fa-save"></i> 保存</button>
+            <button type="button" class="btn btn-cancel pull-right hide_btn" id="cancelBtn"><i class="fa fa-reply"></i> 取消</button>
+        </div>
+        <div class="form_wrap">
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    用户代码
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="user_code" lbl keep></div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    用户名称
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="user_name" lbl keep></div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    所属部门
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="dep_name" lbl keep></div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    身份证号
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="id_card" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="id_card">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title_btn_group">
+            <h5 class="section pull-left">联系方式</h5>
+        </div>
+        <div class="form_wrap">
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    电话号码
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="tel" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="tel">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    手机号码
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="mobile" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="mobile">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    邮箱地址
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="email" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="email">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    备注
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="note" lbl></div>
+                    <div ctl>
+                        <textarea class="form-control xyz_validate_input" rows="3" name="note"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

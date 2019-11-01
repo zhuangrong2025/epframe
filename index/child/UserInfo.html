@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <link rel="stylesheet" href="UserInfo.css" />
+</head>
+
+<body>
+    <div id="main" class="single_layout"></div>
+</body>
+<script id="seajsnode" src="../../../sea-modules/sea.js"></script>
+<script src="../../../sea-modules/seajs-helper.js"></script>
+
+<script>
+    seajs.use(['./UserInfo'], function(Main) {
+        var m = new Main({
+            el: '#main'
+        });
+        m.render();
+    });
+</script>
+
+</html>

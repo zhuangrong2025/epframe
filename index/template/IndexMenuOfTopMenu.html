@@ -1,0 +1,13 @@
+<%for(var i=0,menu; menu=menus[i]; i++){%> 
+    <li data-code="<%=menu.menu_code%>" class="<%=menu.cls%>"><%=menu.menu_name%>
+        <%if(menu.childArr && menu.childArr.length && menu.$totallevel > 3) {%>
+        <ul class="dropdown_menu auto">
+        <%for(var j=0,submenu; submenu=menu.childArr[j]; j++){%> 
+            <li data-code="<%=submenu.menu_code%>" class="menu_item">
+                <%=submenu.menu_name%>
+            </li>
+        <%}%>
+        </ul>
+        <%}%>
+    </li>
+<%}%>

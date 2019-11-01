@@ -1,0 +1,275 @@
+.index_wrapper .dropdown {
+    border-color: #eee;
+    background-color: #fff;
+}
+
+.index_wrapper .dropdown::before {
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.index_wrapper .dropdown::after {
+    border-bottom-color: #fff;
+}
+
+.index_wrapper ul.dropdown li {
+    color: #555 !important;
+}
+
+.index_wrapper ul.dropdown li.active,
+.index_wrapper ul.dropdown li:hover {
+    background-color: #F6F6F6;
+}
+
+.index_wrapper ul.dropdown li.divider {
+    background-color: #f1f3f6;
+}
+
+.index_wrapper ul.dropdown li.disabled,
+.index_wrapper ul.dropdown li.disabled:hover {
+    background-color: inherit;
+}
+
+.index_header {
+    color: #fff;
+    background: #0A75FF;
+    background: -moz-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: -webkit-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: -o-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: -ms-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0A75FF', endColorstr='#479BFF');
+}
+
+.index_header_logo .submenu_toggler span,
+.index_header_logo .submenu_toggler span::before,
+.index_header_logo .submenu_toggler span::after {
+    background-color: #a7b5c6;
+}
+
+.index_header_logo .submenu_toggler:hover span,
+.index_header_logo .submenu_toggler:hover span::before,
+.index_header_logo .submenu_toggler:hover span::after {
+    background-color: #ffffff;
+}
+
+.index_header_menu ul.menu_list>li.active,
+.index_header_menu ul.menu_list>li:hover {
+    background-color: #1678F4;
+}
+
+.index_header_menu ul.dropdown_menu {
+    border-color: #1678F4;
+    border-top: none;
+}
+
+.index_header_menu ul.dropdown_menu li.active,
+.index_header_menu ul.dropdown_menu li:hover {
+    background-color: #F0F7FD;
+    color: #3B89FF !important;
+}
+
+.index_header_tool ul.tool_list>li>a.hover:hover {
+    background-color: #1678F4;
+}
+
+.index_header_tool ul.tool_list>li.message>a span {
+    color: #fff;
+    background-color: #FFC13D;
+}
+
+.index_header_tool ul.tool_list>li.profile>a i {
+    color: #948F95;
+    background-color: #fff;
+}
+
+.index_header_tool ul.tool_list>li.profile>a span {
+    color: #fff;
+}
+
+.index_header_tool ul.tool_list>li .theme {
+    border-color: #fff;
+}
+
+.index_header_tool ul.tool_list>li a.theme:hover {
+    box-shadow: rgb(236, 251, 0) 0px 0px 6px;
+}
+
+.index_header_tool ul.tool_list i.tool_i {
+    color: #fff;
+}
+
+.index_header_switch {
+    background-color: #1678F4;
+}
+
+.index_container .index_broadside_wrapper {
+    background-color: #202a3d;
+}
+
+.menu_wrapper li {
+    border-bottom-color: #243147;
+}
+
+.menu_wrapper .menu>li {
+    background-color: #202a3d;
+}
+
+.menu_wrapper .menu>li.open>a {
+    border-bottom: 1px solid #243147;
+}
+
+.menu_wrapper .menu>li>a {
+    color: #B2B2B2;
+}
+
+.menu_wrapper .submenu>li {
+    background-color: #202A3D;
+}
+
+.menu_wrapper .submenu>li.active {
+    background-color: #141a2c;
+}
+
+.menu_wrapper .submenu>li>a {
+    color: #B2B2B2;
+}
+
+.menu_wrapper .menu li>a:hover,
+.menu_wrapper .menu li.active>a,
+.menu_wrapper .submenu li.active>a {
+    color: #5faaff;
+}
+
+.menu_wrapper .menu li.menu_item>a:hover,
+.menu_wrapper .menu li.menu_item.active>a {
+    border-left-color: #3b7aef !important;
+    background-color: #141A2C;
+}
+
+.index_content_wrapper .content_tabs {
+    border-bottom-color: #EBEBEB;
+    background-color: #fff;
+}
+
+.content_tabs .tabs_ctrl {
+    border-bottom-color: #EBEBEB;
+    color: #666;
+    background-color: #fff;
+}
+
+.content_tabs .tabs_ctrl.disabled {
+    color: #666 !important;
+}
+
+.content_tabs .tabs_ctrl.tabs_prev {
+    border-right-color: #EBEBEB;
+}
+
+.content_tabs .tabs_ctrl.tabs_refresh {
+    border-right-color: #EBEBEB;
+}
+
+.content_tabs .tabs_ctrl.tabs_next {
+    border-left-color: #EBEBEB;
+}
+
+.content_tabs .tabs_ctrl.tabs_dropdown {
+    border-left-color: #EBEBEB;
+}
+
+.content_tabs .tabs_list>a {
+    border-right-color: #EBEBEB;
+    color: #666;
+}
+
+.content_tabs .tabs_list>a.active {
+    background-color: #F5F5F5;
+}
+
+.content_tabs .tabs_ctrl:hover,
+.content_tabs .tabs_list>a:hover,
+.content_tabs .tabs_list>a.active {
+    color: #333;
+}
+
+
+/* 消息通知 */
+
+.index_notice {
+    -webkit-box-shadow: -3px 0 3px rgba(158, 158, 158, 0.2);
+    box-shadow: -3px 0 3px rgba(158, 158, 158, 0.2);
+    background-color: #fff;
+    color: #333;
+}
+
+.index_notice label.btn-outline.active,
+.index_notice label.btn-outline.active:hover {
+    background: #3b89ff !important;
+}
+
+.index_notice .nt-header {
+    color: #fff;
+    background: #0A75FF;
+    background: -moz-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: -webkit-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: -o-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: -ms-linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    background: linear-gradient(to right, #0A75FF 0%, #479BFF 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0A75FF', endColorstr='#479BFF');
+}
+
+.index_notice.unfold .nt-header em {
+    color: #fff;
+    background-color: #2787FF;
+}
+
+.index_notice .nt-right {
+    border-left-color: #e1e1e1;
+}
+
+.index_notice .nt-setting {
+    background-color: #FAFAFA;
+    border-bottom-color: #e1e1e1;
+}
+
+.index_notice .nt-summary .nt-filter {
+    border-bottom-color: #e1e1e1;
+}
+
+.index_notice .nt-summary .nt-list li:hover::before,
+.index_notice .nt-summary .nt-list li:after {
+    background-color: #ebebeb;
+}
+
+.index_notice .nt-summary .nt-list li:hover {
+    background-color: #F5F5F5;
+}
+
+.index_notice .nt-summary .nt-list li i.xy-icon {
+    color: #2787FF;
+}
+
+.index_notice .nt-summary .nt-list li i.hasread {
+    /* 主题 */
+    color: lightgray;
+}
+
+.index_notice .nt-summary .nt-list li h3 i {
+    background-color: #77BDFF;
+}
+
+.index_notice .nt-right .nt-content h3:after {
+    background-color: #e1e1e1;
+}
+
+.index_notice .nt-right .nt-content h3 span {
+    border-bottom-color: #2787FF;
+}
+
+
+/* 个性样式 */
+
+.xyz_bootstrap_switch .bootstrap-switch-on,
+.xyz_bootstrap_switch .bootstrap-switch .bootstrap-switch-handle-on {
+    background: #2787FF !important;
+}
