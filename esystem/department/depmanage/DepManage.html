@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>部门信息维护</title>
+    <link rel="stylesheet" href="DepManage.css" />
+</head>
+
+<body>
+  <div class="left_right_layout_spacing">
+    <div id="main" class="left_right_layout esys-datalist-tree" ></div>
+  </div>
+</body>
+<script id="seajsnode" src="../../../../sea-modules/sea.js"></script>
+<script src="../../../../sea-modules/seajs-helper.js"></script>
+
+<script>
+    seajs.use(['./DepManage'], function(Main) {
+        var m = new Main({
+            el: '#main'
+        });
+        m.render();
+    });
+</script>
+
+</html>

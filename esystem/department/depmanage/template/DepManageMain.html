@@ -1,0 +1,127 @@
+<div class="left_layout_wrap" id="depTreePanel"></div>
+<div class="right_layout_wrap">
+    <form id="depForm" class="shine_form">
+        <div class="title_btn_group">
+            <h5 class="section pull-left">基础信息</h5>
+            <button type="button" class="btn pull-right btn-delete" id="cancellation" disabled><i class="fa fa-close"></i> 注销</button>
+            <button type="button" class="btn pull-right btn-recovery" id="recovery"><i class="fa fa-check"></i> 恢复</button>
+            <button type="button" class="btn pull-right btn-edit" id="edit"><i class="fa fa-edit"></i> 修改</button>
+            <button type="button" class="btn pull-right btn-save" id="save"><i class="fa fa-save"></i> 保存</button>
+            <button type="button" class="btn pull-right btn-cancel" id="cancel"><i class="fa fa-reply"></i> 取消</button>
+        </div>
+        <div class="form_wrap">
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    部门代码
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="dep_code" lbl keep></div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    部门名称
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="dep_name" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="dep_name" required maxlength="15">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    部门全称
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="dep_full_name" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="dep_full_name" maxlength="50">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    上级部门
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="parent_dep_id" lbl></div>
+                    <div ctl>
+                        <div id="parent_dep_id"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group multi_row multi-col">
+                <div class="form_wrap_group_title">
+                    备注
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="note" lbl></div>
+                    <div ctl>
+                        <textarea class="form-control xyz_validate_input" name="note" rows="2" maxlength="100">></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_wrap">
+            <div class="title_btn_group">
+                <h5 class="section pull-left">联系方式</h5>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    部门地址
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="addr" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input"  maxlength="100" name="addr">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    邮政编码
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="post" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="post"  maxlength="6">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    联系人
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="linkman" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" maxlength="25"  name="linkman">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    联系电话
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="tel" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="tel"  maxlength="13">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    邮件地址
+                </div>
+                <div class="form_wrap_group_content">
+                    <div field="email" lbl></div>
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" maxlength="40"  name="email">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

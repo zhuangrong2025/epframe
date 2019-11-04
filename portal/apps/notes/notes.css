@@ -1,0 +1,127 @@
+.notes-container{
+    height: 100%;
+    position: relative;
+}
+.notes-container li,
+.notes-container ul{
+    padding: 0;
+    margin: 0;
+}
+.notes-container li{
+    float: left;
+    width: 50%;
+    padding:0 0 0 50px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.notes-container li a{
+    cursor: default;
+    display: block;
+    height: 44px;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 9;
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+}
+.notes-container li a span{
+    position: relative;
+    z-index: 9;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notes-container li a em{
+    font-size: 10px;
+    color: #999;
+    font-style: normal;
+}
+.notes-container li i{
+    position: absolute;
+    top: 5px;
+    left: 24px;
+    text-align: center;
+    display: block;
+    width: 25px;
+    height: 33px;
+    line-height: 32px !important;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 0;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+.notes-container li.active {
+    padding-left:30px;
+}
+.notes-container li.active i {
+    left: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12);
+}
+.notes-container li.c01 i{
+    background-color: #FF7300;
+}
+.notes-container li.c02 i{
+    background-color: #3B89FF;
+}
+.notes-container li.c03 i{
+    background-color: #61EFD6;
+}
+.notes-container li.c04 i{
+    background-color: #FFE155;
+}
+.notes-container .notes-content{
+    height: 100%;
+}
+.notes-container .notes-slide{
+    padding-top: 6px;
+    padding-right: 8px;
+}
+.notes-container .notes-add{
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    bottom: 20px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 34px;
+    border-radius: 50%;
+    background-color: #3B89FF;
+    color: #fff;
+    font-size: 22px;
+    font-weight: normal;
+    box-shadow: 0 0 3px 0 rgba(59, 137, 255, 0.8);
+    cursor: pointer;
+    text-align: center;
+}
+.notes-container a label{
+    position: absolute;
+    z-index: 999;
+    top: -5px;
+    right: -5px;
+    display: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    line-height: 12px;
+    text-align: center;
+    background-color: #FE4440;
+    color: #fff;
+    cursor: pointer;
+}
+.notes-container a:hover label{
+    display: block;
+}
+.div_float_left{
+    float: left;
+    width: auto;
+    line-height: 31px;
+}
+.div_margin_left{
+    margin-left: 10px;
+}

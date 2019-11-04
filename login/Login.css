@@ -1,0 +1,118 @@
+html,body{ 
+	margin:0px; 
+	height:100%; 
+}
+.system_login{
+	width: 100%;
+    height: 100%;
+}
+/*登录页主背景  开始*/
+.login_container{
+	width: 100%;
+	height: 100%;
+	background-image: url(../../assets/business/login_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*登录页主背景  结束*/
+
+/*登录框  开始*/
+/*登录框背景*/
+.login_container .login_sign_in{
+    padding: 30px;
+    margin-top: 18%;
+    margin-right: 6%;
+    float: right;
+    width: 484px;
+    height: 373px;
+    border-top: 7px solid #2978ff;
+    background-color: #f5f5f5;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: url(../../assets/business/sign_in.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+/*登录框标题*/
+.login_container .login_sign_in .login_sign_in_title{
+    font-size: 24px;
+    font-family: "微软雅黑";
+    font-weight: 700;
+    color: #51565d;
+}
+.login_container .login_sign_in .login_sign_in_title span{
+	font-size: 18px;
+	font-weight: 400;
+}
+/*登录框内容*/
+.login_container .login_sign_in .login_sign_in_content{
+    margin-top: 0px;
+}
+.login_container .login_sign_in .login_sign_in_content .login_input{
+	padding-left: 35px;
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid #e1e1e1;
+}
+.login_container .login_sign_in .login_sign_in_content .input_icon{
+	position: relative;
+    top: 32px;
+    left: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.login_container .login_sign_in .login_sign_in_content .password{
+	margin-top: -10px;
+}
+.login_container .login_sign_in .login_sign_in_content .system_selection{
+	display: none;
+	margin-top: 15px;
+}
+.login_container .login_sign_in .login_sign_in_content .remember_forget_password{
+    margin-top: 15px;
+	width: 100%;
+}
+.login_container .login_sign_in .login_sign_in_content .remember_forget_password .login_sign_in_remember{
+	float: left;
+	width: 50%;
+}
+.login_container .login_sign_in .login_sign_in_content .remember_forget_password .login_sign_in_forget{
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+.login_container .login_sign_in .login_sign_in_content .remember_forget_password .login_sign_in_forget span{
+    cursor: pointer;
+}
+/*登录按钮*/
+.login_container .login_sign_in .login_sign_in_content .btn_sign_in{
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	background: -webkit-linear-gradient(#4088ff, #4172fa); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#4088ff, #4172fa); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#4088ff, #4172fa); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#4088ff, #4172fa); /* 标准的语法 */
+	color: #fff;
+    font-size: 18px;
+    letter-spacing: 10px;
+}
+.white_bg{
+	background-color: #fff !important;
+}
+/*登录框  结束*/
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+	.login_container .login_sign_in{
+	    margin-top: 13%;
+	    margin-right: 6%;
+	    float: right;
+	    width: 434px;
+	    height: 323px;
+	}
+	.login_container .login_sign_in .login_sign_in_content{
+		margin-top: 0px;
+	}
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>操作信息查询</title>
+    <link rel="stylesheet" href="OpLogInfo.css" />
+</head>
+
+<body>
+      <div id="main" class="top_bottom_layout_spacing"></div>
+</body>
+<script id="seajsnode" src="../../../../sea-modules/sea.js"></script>
+<script src="../../../../sea-modules/seajs-helper.js"></script>
+
+<script>
+    seajs.use(['./OpLogInfo', 'base-common-module'], function(Main) {
+        (new Main({
+            "el": "#main"
+        })).render();
+    });
+</script>
+
+</html>

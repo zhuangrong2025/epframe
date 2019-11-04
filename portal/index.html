@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人首页</title>
+    <link rel="stylesheet" href="myportal/MyPortal.css">
+</head>
+
+<body class="esys-body">
+    <div id="main" class="esys-apps-container"></div>
+</body>
+<script id="seajsnode" src="../../sea-modules/sea.js"></script>
+<script src="../../sea-modules/seajs-helper.js"></script>
+
+<script>
+    seajs.use(['./myportal/MyPortal'], function(Main) {
+        new Main({
+            el: "#main"
+        }).render();
+    });
+</script>
+
+</html>

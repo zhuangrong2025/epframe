@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    letter-spacing: normal;
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+    background-image: -moz-linear-gradient( 90deg, rgb(163, 221, 255) 0%, rgb(255, 255, 255) 53%, rgb(154, 218, 255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(163, 221, 255) 0%, rgb(255, 255, 255) 53%, rgb(154, 218, 255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(163, 221, 255) 0%, rgb(255, 255, 255) 53%, rgb(154, 218, 255) 100%);
+    background-color: #c1e8ff;
+}
+
+.main {
+    padding: 0 50px;
+}
+
+.tips {
+    color: #666;
+    padding: 10px 0 18px 20px;
+    border-bottom: 1px solid #85d2ff;
+}
+
+.title {
+    padding: 25px 0 0;
+    font-size: 26px;
+}
+
+.title span {
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 6px solid #5693f7;
+    width: 10px;
+}
+
+.form-wrap {
+    padding: 50px 20px;
+    min-height: 226px;
+    border-bottom: 1px solid #85d2ff;
+}
+
+.form-wrap .row {
+    padding: 12px 0;
+}
+
+.form-wrap input {
+    width: 272px;
+    height: 33px;
+    border-radius: 3px;
+    background-color: #fff;
+    line-height: 33px;
+    border: 1px solid #8da6b5;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.form-wrap label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    text-align: justify;
+    height: 33px;
+    line-height: 33px;
+    overflow: hidden;
+    margin-right: 15px;
+    word-break: keep-all;
+}
+
+.form-wrap label::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.form-wrap em {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+}
+
+.form-footer {
+    text-align: right;
+    padding: 20px 0 0;
+}
+
+.btn {
+    background-color: #5693f7;
+    border-radius: 5px;
+    width: 160px;
+    height: 39px;
+    line-height: 39px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #397eef;
+}
+
+.col {
+    width: 280px;
+}

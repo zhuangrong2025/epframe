@@ -1,0 +1,149 @@
+<div class="coverlap_top_content">
+    <div class="title_btn_group">
+        <h5 class="section pull-left">基础信息</h5>
+    </div>
+    <form id="userForm" class="shine_form edit">
+        <div class="form_wrap">
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    用户代码
+                </div>
+                <div class="form_wrap_group_content ">
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="user_code" required placeholder="请输入用户代码（必填），作为登录名" maxlength="30">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    用户名称
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="user_name" required placeholder="请输入用户名称（必填）" maxlength="15">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    用户组
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <div id="USER_GROUP"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    所属部门
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <div id="DEP_ID"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    身份证
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="id_card" maxlength="18">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    备注
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <textarea class="form-control xyz_validate_input" name="note" maxlength="100" />
+                    </div>
+                </div>
+            </div>
+            <div class="title_btn_group">
+                <h5 class="section pull-left">登录政策</h5>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title" style="width:180px">
+                    用户下次登录时必须修改密码
+                </div>
+                <div class="form_wrap_group_content" style="width:calc(100% - 200px)">
+                    <div ctl>
+                        <div id="IS_UPDATE_PWD"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    密码永不过期
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <div id="IS_ALWAYS_VALID"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    密码有效天数
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="period_of_validity" id="period_of_validity_id">
+                    </div>
+                </div>
+            </div>
+            <div class="title_btn_group">
+                <h5 class="section pull-left">联系方式</h5>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    联系电话
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="tel" maxlength="13">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    手机号码
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="mobile" maxlength="11">
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap_group">
+                <div class="form_wrap_group_title">
+                    邮箱地址
+                </div>
+                <div class="form_wrap_group_content">
+                    <div ctl>
+                        <input class="form-control xyz_validate_input" name="email" id="id_email" maxlength="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="coverlap_bottom_btn">
+	<button class="btn btn-cancel-lv1" id="userAddCancel">取消</button>
+	<button class="btn btn-action-lv1" id="userAddSave">保存</button>
+</div>
+
+<div class="useradd_success_layer" id="useraddSuccessLayer">
+    <i class="xy-icon xy-save"></i>
+    <p class="success_tips">保存成功！</p>
+    <div class="useradd_layer_btn">
+	    <button class="btn btn-action-lv1" id="returnBtn">返回列表</button>
+        <button class="btn btn-view-lv1" id="relativeRole">用户授权</button>
+    </div>
+</div>

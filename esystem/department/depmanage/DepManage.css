@@ -1,0 +1,45 @@
+.shine_form .btn-delete.shown, .shine_form .btn-recovery.shown{
+    display: block;
+}
+
+.shine_form.edit .btn-delete, .shine_form.edit .btn-recovery, .shine_form.edit .btn-delete.shown, .shine_form.edit .btn-recovery.shown,.shine_form .btn-delete, .shine_form .btn-recovery {
+    display: none;
+}
+
+.btn-recovery{
+    color: #666;
+    background-color: #f7f7f7;
+}
+.btn-recovery i{
+    color: #FF7300;
+}
+
+.shine-coverlap-bordered .shine-coverlap-content {
+    /* 弹出框内容样式 */
+    margin-bottom: 8px;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+}
+
+.shine-coverlap-bordered .shine-coverlap-button .btn {
+    /* 弹出框按钮栏样式 */
+    margin-right: 10px;
+}
+
+.form_wrap_group.multi_row .form_wrap_group_title,
+.form_wrap_group.multi_row .form_wrap_group_content {
+    /* 多行表单控件不限制高度 */
+    height: auto !important;
+}
+
+textarea.form-control,
+.treeselect-container .treeselect-selection {
+    /* 多行文本框和下拉树边框颜色与其它控件边框颜色统一 */
+    border-color: #ccc;
+}
+
+.treeselect-container--default .treeselect-search--inline .treeselect-search__field {
+    /* 去除下拉树搜索框阴影 */
+    box-shadow: none !important;
+}

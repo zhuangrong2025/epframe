@@ -1,0 +1,67 @@
+.esys-portal-container {
+    margin-left: -10px;
+    margin-right: -10px;
+    position: relative;
+}
+.esys-portlet-item {
+    float: left;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.esys-portlet {
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid  #ECECEC;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.82);
+    height: 290px;
+}
+.esys-portlet-header {
+    line-height: 30px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    padding: 6px 12px 6px 12px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.esys-portlet-header span {
+    float: left;
+}
+.esys-portlet-header .esys-portlet-tools {
+    float: right;
+}
+.esys-portlet-header .esys-portlet-tools i{
+    color: #bdbdbd;
+    cursor: pointer;
+}
+.esys-portlet-content {
+    padding: 0 12px 10px;
+    height: calc(100% - 42px);
+    overflow: auto;
+}
+.esys-portlet-placeholder {
+    /*margin: 0 1em 1em 0;*/
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+.esys-portlet-placeholder-inner {
+    background-color: #EFEFEF;
+    height: 100%;
+}
+.resizable-helper {
+    border: 1px solid #ff0000
+}
+.helper-line.one-line {
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px dashed #ff0000;
+}

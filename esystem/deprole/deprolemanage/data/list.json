@@ -1,0 +1,64 @@
+{
+    "result": {
+        "columnList": [
+            {
+                "colType": 2,
+                "data": "ROLE_ID",
+                "dict": false,
+                "dict_data": "",
+                "exportable": false,
+                "extDict": "",
+                "name": "ROLE_ID",
+                "orderable": false,
+                "searchable": false,
+                "title": ""
+            },
+            {
+                "colType": 12,
+                "data": "ROLE_NAME",
+                "dict": false,
+                "dict_data": "",
+                "exportable": false,
+                "extDict": "",
+                "name": "ROLE_NAME",
+                "orderable": false,
+                "searchable": false,
+                "title": ""
+            },
+            {
+                "colType": 12,
+                "data": "ROLE_DESC",
+                "dict": false,
+                "dict_data": "",
+                "exportable": false,
+                "extDict": "",
+                "name": "ROLE_DESC",
+                "orderable": false,
+                "searchable": false,
+                "title": ""
+            }
+        ],
+        "data": [
+            {"role_id": 5, "role_name": "角色1", "role_desc": ""},
+            {"role_id": 6, "role_name": "角色2", "role_desc": ""},
+            {"role_id": 7, "role_name": "角色3", "role_desc": ""},
+            {"role_id": 8, "role_name": "角色4", "role_desc": ""}
+        ],
+        "desc": "",
+        "dicts": {},
+        "errorCode": "",
+        "isSuccess": false,
+        "jsonrpc": "2.1",
+        "limit": 0,
+        "message": "",
+        "recordsFiltered": 80,
+        "recordsTotal": 80,
+        "retCode": 0,
+        "retValue": "",
+        "version": "1.0"
+    },
+    "status": {
+        "code": 0,
+        "message": "操作成功!"
+    }
+}

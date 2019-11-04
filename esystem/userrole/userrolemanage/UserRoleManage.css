@@ -1,0 +1,33 @@
+.main_layout{
+    height: 100%;
+    padding: 8px 12px 8px 0px;
+}
+.main_content_wrap{
+    height: 100%;
+    
+}
+
+.special_message {
+    line-height: 30px;
+    display: none;
+}
+
+.special_message.show {
+    display: inline-block !important;
+}
+
+.special_message.show_block {
+    display: block !important;
+}
+
+.special_column.error,
+.special_trans_item  {
+    color: #fe4541;
+}
+.special_column.esys-disabled {
+    color: #909399;
+}
+
+.transfer_container{
+    overflow-x: hidden;
+}

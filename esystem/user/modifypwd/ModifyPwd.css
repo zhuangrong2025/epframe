@@ -1,0 +1,47 @@
+.psw-reset-wrapper{
+    padding: 60px 60px 60px;
+  }
+  .psw-reset{
+    background-color: #fff;
+    padding: 15px 108px 80px;
+  }
+  .psw-reset h3{
+    font-size: 28px;
+    padding: 20px 0;
+    color: #333;
+  }
+  .psw-reset .psw-form{
+    padding: 28px 10px 10px;
+    border-top: 1px solid  #ebebeb;
+    border-bottom: 1px solid  #ebebeb;
+  }
+  .psw-reset .psw-form .tip{
+    font-weight: bold;
+    color: #f00;
+  }
+  .psw-reset .psw-form > ul{
+    max-width: 500px;
+    padding: 32px 0 0;
+  }
+  .psw-reset .psw-form > ul li{
+    padding: 12px 0;
+  }
+  .psw-reset .psw-form > ul li label{
+    float: left;
+    margin-bottom: 0;
+    width: 15%;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 15px;
+  }
+  .psw-reset .psw-form > ul li input{
+    width: 83%;
+  }
+  .psw-reset .btn-wrap{
+    padding-top: 20px;
+    font-size: 0;
+  }
+  .psw-reset .btn-wrap button{
+    width: 80px;
+    margin-right: 10px;
+  }

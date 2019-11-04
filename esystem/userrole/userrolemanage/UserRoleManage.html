@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户角色管理</title>
+    <link rel="stylesheet" />
+</head>
+<body>
+    <div id="main" class="main_layout"></div>
+</body>
+<script id="seajsnode" src="../../../../sea-modules/sea.js"></script>
+<script src="../../../../sea-modules/seajs-helper.js"></script>
+<script src="../../../../vars.js"></script>
+<script>
+    seajs.use(['./UserRoleManage'], function(Main) {
+        new Main({
+            el: "#main"
+        });
+    });
+    
+</script>
+</html>

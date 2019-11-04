@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>部门角色信息维护</title>
+    <link rel="stylesheet" href="DepRoleManage.css" />
+</head>
+
+<body>
+    <div class="left_right_layout_spacing">
+      <div id="main" class="left_right_layout"></div>
+    </div>
+</body>
+<script id="seajsnode" src="../../../../sea-modules/sea.js"></script>
+<script src="../../../../sea-modules/seajs-helper.js"></script>
+
+<script>
+    seajs.use(['./DepRoleManage'], function(Main) {
+        new Main({
+            el: "#main"
+        }).render();
+    });
+</script>
+
+</html>

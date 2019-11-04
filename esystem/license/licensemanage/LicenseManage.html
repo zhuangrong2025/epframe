@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>许可证导入</title> 
+    <link rel="stylesheet" href="LicenseManage.css" />
+</head>
+
+<body>
+    <div id="main" class="top_bottom_layout_spacing">正在加载...</div> 
+</body>
+<script id="seajsnode" src="../../../../sea-modules/sea.js"></script>
+<script src="../../../../sea-modules/seajs-helper.js"></script>
+
+<script>
+	seajs.use(['./LicenseManage.js'], function(Main) {
+	    new Main({
+	        el: "#main"
+	    }).render();
+	});
+</script>
+
+</html>

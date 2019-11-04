@@ -1,0 +1,38 @@
+<div id="mask" class="mask" >
+  <div class="loading-message ">
+    <img src="../../../../assets/shine-metron/loading-spinner-grey.gif" align="">
+    <span>正在上传文件...</span>
+  </div>
+
+</div>
+<div class="top_bottom_layout license-wrap">
+    <div class="condition_top_body condition_top_trans condition_top_single" style="margin-top: 10px;"><!-- 查询条件 -->
+       <div class="condition_top">
+        <div class="condition_top_left">
+           <div class="condition_top_content_div">
+             <div class="condition_top_content_title">许可文件</div>
+              <div id="userselect" class="condition_top_content_dom">
+                  <div class="esys-search esys-more xyz_validate_inst">
+                   <dl>
+                    <dt>
+                     <input type="text"   id="license_file_show"  class="form-control xyz_validate_input esys-readonly-light" readonly>
+                     <i class="xy-icon xy-shenglvehao"></i>
+                     <form id="license_file_form"    enctype="multipart/form-data">
+                         <input type="file"  name="files" id="license_file" accept=".lic" style="display: none" >
+                      </form><!-- end shine_form edit -->
+                    </dt>
+                   </dl>
+                  </div>
+              </div>
+           </div>
+        </div><!-- end condition_top_left -->
+         <div class="condition_top_right">
+                <div class="condition_top_more_div">
+                    <button type="button" class="btn btn-action-lv1" id="import_license" disabled>导入</button>
+                    <button type="button" class="btn btn-edit" id="read_license" >当前许可</button>
+                </div>
+        </div><!-- end  condition_top_right-->
+      </div><!-- end condition_top -->
+    </div>
+    <div id="licenseContent"></div>
+</div><!-- end top_bottom_layout -->

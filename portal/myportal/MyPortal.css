@@ -1,0 +1,93 @@
+html, body{overflow: hidden;}
+.esys-apps-container {
+    padding: 12px;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x:hidden;
+    overflow-y:auto;
+    height: 100%;
+}
+/* 悬浮图标--门户设置 */
+.portal-set{
+    position: fixed;
+    display: none;
+    right: 20px;
+    top: 335px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #3B89FF;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 rgba(59, 137, 255, 0.9);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    z-index: 99999;
+}
+.portal-set i{
+    font-size: 17px;
+    display: block;
+    margin-top: 2px;
+}
+.portal-set:hover{
+    width: 80px;
+    border-radius: 20px;
+}
+.portal-set:hover i{
+    margin-top: 0;
+    font-size: 14px;
+}
+.portal-set:hover i::before{
+    content: '首页配置';
+}
+
+/* 配置弹出框 */
+.appSetting-wrap {
+    padding-top: 0px;
+}
+.appSetting-group {
+    margin: 15px 0;
+}
+.appSetting-group:before, .appSetting-group:after {
+    content: " ";
+    display: table;
+}
+.appSetting-wrap  .appSetting-group-title {
+    float: left;
+    color: #333;
+    font-size: 13px;
+    padding-right: 10px;
+    width: 120px;
+    height: 20px;
+}
+.appSetting-wrap  .appSetting-group-content {
+    float: left;
+    width: calc(100% - 120px);
+}
+.entrance-switch-wrap{
+    float: left;
+}
+.entrance-switch-info {
+    margin-left: 80px;
+    font-size: 12px;
+    color: #999;
+}
+.appSetting-wrap .app-list-box {
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    padding: 10px;
+}
+.appSetting-wrap  .app-item {
+    float: left;
+    width: 50%;
+    margin: 5px 0;
+}
+.appSetting-wrap .app-item .mt-checkbox {
+    margin-bottom: 0;
+}
+.app-list-set .appSetting-group-title {
+    width: 80px;
+}
+.app-list-set .appSetting-group-content {
+    width: calc(100% - 80px);
+}

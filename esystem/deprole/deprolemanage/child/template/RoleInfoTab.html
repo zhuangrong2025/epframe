@@ -1,0 +1,33 @@
+<form id="roleInfoForm" class="shine_form">
+    <!-- 标题及编辑按扭定义 -->
+    <div class="title_btn_group">
+        <h5 class="section pull-left">基础信息</h5>
+        <button type="button" class="btn btn-edit pull-right"><i class="fa fa-edit"></i> 修改</button>
+        <button type="button" class="btn btn-save pull-right"><i class="fa fa-save"></i> 保存</button>
+        <button type="button" class="btn btn-cancel pull-right"><i class="fa fa-reply"></i> 取消</button>
+    </div>
+    <div class="form_wrap">
+        <div class="form_wrap_group">
+            <div class="form_wrap_group_title">
+                角色名称 :
+            </div>
+            <div class="form_wrap_group_content">
+                <div field="role_name" lbl></div>
+                <div ctl>
+                    <input class="form-control xyz_validate_input" name="role_name" required placeholder="请输入角色名称（必填），最长15个字符" maxlength="15">
+                </div>
+            </div> 
+        </div>
+        <div class="form_wrap_group">
+            <div class="form_wrap_group_title">
+                角色说明 :
+            </div>
+            <div class="form_wrap_group_content">
+                <div field="note" lbl></div>
+                <div ctl>
+                    <input class="form-control xyz_validate_input" name="note" placeholder="请输入角色说明" maxlength="100">
+                </div>
+            </div>            
+        </div>
+    </div>
+</form>

@@ -1,0 +1,26 @@
+.form_wrap_group.multi_row .form_wrap_group_title,
+.form_wrap_group.multi_row .form_wrap_group_content {
+    /* 多行表单控件不限制高度 */
+    height: auto !important;
+}
+.mask {
+  z-index: 1000;
+  border: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(85, 85, 85, .1);
+  position: fixed;
+  text-align: center;
+}
+.mask::before,
+.mask::after {
+  content: '';
+  display: block;
+  height: 45%;
+}
+
+.esys-datalist-wrap.app_info_box{
+  height: calc(100% - 185px)
+}

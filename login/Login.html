@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>运营管理综合管理平台</title>
+</head>
+<body>
+    <div class="system_login" id="system_login">
+        
+    </div>
+    
+</body>
+<script src="../../sea-modules/sea.js"></script>
+<script src="../../sea-modules/seajs-helper.js"></script>
+
+<script>
+    seajs.use(['./Login', 'base-common-module'], function (Main) {
+        var m = new Main({
+            el: '#system_login'
+        });
+        m.render();
+    });
+</script>
+</html>

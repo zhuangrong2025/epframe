@@ -1,0 +1,74 @@
+.right_module_container{
+    margin-left: 12px;
+    padding: 10px 12px;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+}
+.condition_top_body{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.condition_item{
+    float: left;
+    margin-right: 20px;
+}
+.condition_item_title{
+    float: left;
+    display: inline-block;
+    margin-top: 7px;
+    margin-right: 10px;
+    width: 60px;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: right;
+}
+.condition_item_cont{
+    float: left;
+    width: 280px;
+}
+.condition_right_operation{
+    float: right;
+}
+
+
+.suit_dep_select_wrap{
+    width: 300px;
+    display: inline-block;
+}
+.user_trans_wrap{
+    margin-top: 5px;
+}
+
+.operation_success_layer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 10;
+    text-align: center;
+    padding-top: 50px;
+    display: none;
+}
+.operation_success_layer .xy-save{
+    color: #77BC11;
+    font-size: 50px;
+}
+.operation_success_layer .success_tips{
+    font-size: 18px;
+}
+.s-go{
+    color: #999;
+}
+.next_operation{
+    color: #337ab7;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.suit_dep_tree_box{
+    min-height: 300px;
+}

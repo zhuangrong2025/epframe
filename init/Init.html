@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>创建管理员账号</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <span>&nbsp;</span> 创建系统管理员账号
+        </div>
+        <div class="tips">首次使用本系统需创建一个管理员账号！</div>
+        <div class="admin_init" id="admin_init"></div>
+    </div>
+</body>
+<script src="../../sea-modules/sea.js"></script>
+<script src="../../sea-modules/seajs-helper.js"></script>
+
+<script>
+    seajs.use(['./Init', 'base-common-module'], function(Main) {
+        var m = new Main({
+            el: '#admin_init'
+        });
+        m.render();
+    });
+</script>
+
+</html>

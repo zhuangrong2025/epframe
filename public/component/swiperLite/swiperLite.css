@@ -1,0 +1,39 @@
+.swiperlite-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.swiperlite-container .swiperlite-wrapper {
+    position: relative;
+    height: calc(100% - 10px);
+    z-index: 1;
+    white-space: nowrap;
+    transition-duration: 0.3s;
+    box-sizing: content-box;
+}
+.swiperlite-container .slide {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    overflow-x: auto;
+}
+.swiperlite-container .swiperlite-pagination {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    text-align: center;
+    width: 100%;
+}
+.swiperlite-container .swiperlite-pagination span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #F1F3F4;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.swiperlite-container .swiperlite-pagination span.active {
+    background-color: #DDE0E3;
+}

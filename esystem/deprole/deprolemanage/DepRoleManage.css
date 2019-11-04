@@ -1,0 +1,42 @@
+.role-list-wrap .mt-element-list, .role-list-wrap .mt-element-list .mt-list-head {
+    background-color: #ffffff !important;
+}
+.role-list-wrap  .mt-element-list .mt-list-container ul > .mt-list-item {
+    background-color: #ffffff !important;
+    margin-right: 0 !important;
+}
+
+
+
+.dr_func_search_panel{
+    margin:6px;
+    height:35px;
+}
+
+/* update by zr 2019-01-10*/
+/* 删除图标 对齐 */
+.list-search.mt-element-list .mt-list-container ul .mt-list-item.selected .xy-icon.xy-shanchu {
+    top: -20px;
+}
+/* 左边块 上下左右边框 */
+.list-search.xy-element-list.mt-element-list .list-simple.mt-list-head{
+  border-top: none;
+}
+.list-search.xy-element-list.mt-element-list{
+  border-right: none;
+  border-bottom: none;
+}
+/* 左边块 角色名称 标题padding */
+.role-list-wrap .mt-element-list .role_side_list .mt-list-head{
+  padding-top: 0 !important;
+}
+/* 右边块 最小高度 */
+.left_right_layout .right_layout_wrap{
+  /* min-height: 601px; */
+}
+
+.role-list-wrap  .mt-element-list .mt-list-container ul > .mt-list-item.selected {
+    background-color: #fafafa  !important;
+    border-top: 1px solid  #eee  !important;
+    border-bottom: 1px solid  #eee  !important;
+}

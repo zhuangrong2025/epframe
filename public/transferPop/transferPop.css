@@ -1,0 +1,49 @@
+.esys-transfer .esys-transfer-bd .form_checkbox{
+    position: relative;
+}
+.esys-transfer .esys-transfer-bd .form_checkbox > i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #3B89FF;
+    cursor: pointer;
+}
+.esys-transfer .esys-transfer-bd .transfer-pop{
+    position: absolute;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    z-index: 9;
+    padding: 5px 0 5px 32px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(173, 173, 173, 0.6);
+}
+.esys-transfer .esys-transfer-bd .transfer-pop input{
+    border: 1px solid  #e5e5e5;
+    padding-left: 5px;
+    width: 50%;
+    float: left;
+}
+.esys-transfer .esys-transfer-bd .transfer-pop em{
+    float: left;
+    font-style: normal;
+}
+.esys-transfer .esys-transfer-bd .transfer-pop span{
+    float: left;
+    margin-left: 10px;
+}
+.esys-transfer .esys-transfer-bd .transfer-pop span i{
+    cursor: pointer;
+    color: #3B89FF;
+    margin: 2px 3px 0 10px;
+}
+.esys-transfer-wrap .transfer-pop-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(167, 167, 167, 0);
+    z-index: 1;
+}
