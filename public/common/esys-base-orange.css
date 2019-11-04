@@ -1,0 +1,59 @@
+/*!
+ * 系统管理自定义样式橙色皮肤.
+ *
+ * Author: chenming
+ * Date: 2019-01-17
+ */
+
+/**
+ * 数据列表主题样式.
+ */
+.esys-datalist .esys-datalist-body h1 i{
+    color: #ff7300;
+}
+.esys-datalist .esys-datalist-body ul li:hover,
+.esys-datalist .esys-datalist-body ul li.selected{
+    color: #ff7300;
+}
+.esys-datepicker-tablist span.current,.esys-datepicker-tablist span.current:focus,.esys-datepicker-tablist span.current:hover{
+    background-color: #fd921f !important;
+}
+
+/* tab 标签页 */
+.nav-tabs > li {
+    border-bottom: 1px solid #ff7300;
+}
+.nav-tabs > li.active{
+    top: 0;
+}
+.nav-tabs {
+  border-bottom: 1px solid #ff7300;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    color: #ff7300;
+    border-color: #ff7300;
+    border-bottom-color: #fff;
+}
+/* tab 二级*/
+.tabbable-line > .nav-tabs > li.active {
+    border-bottom: 2px solid #ff7300;
+}
+.base_style_manage_style_v1 .tabbable-line > .nav-tabs > li.active:hover,
+.base_style_manage_style_v1 .tabbable-line > .nav-tabs > li.active:hover > a{
+    border-bottom: 2px solid #ff7300;
+}
+.base_style_manage_style_v1 .tabbable-line > .nav-tabs > li.open,
+.base_style_manage_style_v1 .tabbable-line > .nav-tabs > li:hover{
+    border-bottom: 2px solid #ff7300;
+}
+/*ztree背景图标用新的+ — root_open*/
+.xyz_ztree .ztree li span.button.root_open,
+.xyz_ztree .ztree li span.button.root_close{
+    background-image: url(../../../assets/base-style-manage/zTreeStandardDarkblue.png) !important;
+}
+/* 设置中心 2019-11-1 */
+.index_setting .mlng li.active{
+    color: #ff7300;
+}

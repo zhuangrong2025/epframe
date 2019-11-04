@@ -1,0 +1,1195 @@
+/**
+ * 布局样式.
+ */
+.left_layout_wrap {padding: 10px 15px;}
+.left_right_layout.esys-layout-fixed {
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.esys-layout-fixed>.left_layout_wrap {
+    position: fixed;
+    top: 8px;
+    bottom: 8px;
+    height: auto;
+    padding: 10px 15px;
+}
+
+.esys-layout-fixed>.right_layout_wrap {
+    /* margin-left: 310px;
+    min-height: 500px; */
+    position: fixed;
+    top: 8px;
+    left: 300px;
+    bottom: 8px;
+    right: 12px;
+    margin-left: 8px;
+    width: auto;
+    height: auto;
+}
+.left_right_layout.esys-border-collapse .left_layout_wrap,
+.left_right_layout.esys-border-collapse .right_layout_wrap {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+.left_right_layout.esys-border-collapse .left_layout_wrap {
+}
+/*针对对话框内的样式处理*/
+.modal-dialog .left_right_layout.esys-border-collapse::after {
+    position: absolute;
+    border-bottom: 1px solid #ebebeb;
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+}
+.modal-dialog .left_right_layout.esys-border-collapse::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 261px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ebebeb;
+}
+
+.top_bottom_layout.esys-layout {
+    margin: 8px 5px 8px 12px;
+    padding: 10px 15px;
+    background-color: #fff;
+}
+.section.esys-section-main {
+    margin-top: 0px;
+}
+/* .esys-layout > [class*=_layout_wrap] {
+    background-color: #fff;
+} */
+/**
+ * 查询条件区域扩展, 带更多的按扭.
+ */
+.condition_top_body {height: auto !important;}
+.condition_top_content_div.fit {width: auto !important;}
+.condition_top_body .condition_top.open .condition_top_content_div.conceal {
+    display: block;
+}
+
+.shine_form.edit div[ctl] {
+    position: relative;
+}
+
+.shine_form.edit div[lbl][keep],
+.shine_form div[ctl][keep] {
+    display: block !important;
+}
+.xyz_select2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single{
+  border: none;
+}
+
+
+/* 单列布局 */
+
+.single_layout {
+    padding: 8px 5px;
+}
+
+.single_layout .layout_wrap {
+    min-height: 500px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px 3px #e4e4e4;
+}
+
+.esys-tab {
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #e1e1e1;
+    min-height: 500px;
+}
+/* 表单布局 */
+.form_wrap {
+    padding-right: 20px;
+}
+/* 单列表单布局 */
+.form_wrap.c1 .form_wrap_group {
+    width: 100%;
+}
+/* 三列表单布局 */
+.form_wrap.c3 .form_wrap_group {
+    width: 33.33%;
+}
+
+
+.shine_form .form_wrap .form_wrap_group .form_wrap_group_title,
+.shine_form .form_wrap .form_wrap_group .form_wrap_group_content {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*分页条的样式*/
+
+.pagination-panel span.seperator>span {
+    color: #616161;
+}
+.pagination-panel-input{
+    display: none !important;
+}
+
+/**
+ * 左侧列表项
+ */
+.esys-datalist-wrap,
+.esys-datalist {
+    height: 100%;
+}
+.esys-datalist .esys-datalist-head {
+    margin-bottom: 15px;
+    margin-right: 12px;
+}
+.esys-datalist .esys-datalist-body {
+    height: -moz-calc(100% - 69px);
+    height: -webkit-calc(100% - 69px);
+    height: calc(100% - 69px);
+    padding-right: 10px;
+}
+.esys-datalist .esys-datalist-body.scroller {
+    overflow: auto;
+}
+/**
+*container下为树组件时需要将高度设置为100%（不设置则不出现滚动条）
+*/
+.esys-datalist .esys-datalist-body .esys-datalist-container {
+    height: 100%;
+}
+.esys-datalist .esys-datalist-body > h1 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+.esys-datalist .esys-datalist-body > h1 > i {
+    float: right;
+    cursor: pointer;
+}
+.esys-datalist .esys-datalist-body > h1 .title-right {
+    float: right;
+}
+.esys-datalist .esys-datalist-body > h1 .title-right .mt-checkbox{
+    padding-left: 20px;
+    color: #666;
+    font-size: 13px !important;
+}
+.esys-datalist .esys-datalist-body > h1 .title-right .mt-checkbox > span {
+    height: 15px;
+    width: 15px;
+    margin-top: -1px;
+}
+.esys-datalist .esys-datalist-body > h1 .title-right .mt-checkbox > span:after {
+    left: 4px;
+    top: 1px;
+}
+.esys-datalist .esys-datalist-body>ul {
+    padding: 0;
+}
+
+.esys-datalist .esys-datalist-body>ul>li {
+    background-color: #fff;
+    padding: 9px 0;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.esys-datalist .esys-datalist-body>ul>li>i {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    display: none;
+    font-size: 14px;
+}
+
+.esys-datalist .esys-datalist-body>ul>li.selected>i {
+    display: block;
+}
+
+.esys-datalist .esys-datalist-footer {
+    text-align: right;
+    padding: 10px;
+}
+.esys-datalist .esys-datalist-body .ztree {padding: 0;}
+
+
+/**
+* 搜索框
+*/
+.esys-search {
+    max-width: 280px;
+}
+
+.esys-search dl {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+}
+
+.esys-search dt,
+.esys-search dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+.esys-search dt {
+    position: relative;
+    width: 100%;
+}
+
+.esys-search dd {
+    padding-left: 10px;
+    display: table-cell;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.esys-search dt>i {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #c1c1c1;
+}
+
+/* 输入框 更多 */
+.esys-search.esys-more{
+    max-width: none;
+}
+.esys-search.esys-more dt > i{
+    top: 2px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.esys-readonly-light {
+    background-color: #fff !important;
+    color: #666 !important;
+}
+.ipt-more-btn{
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    color: #c1c1c1;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.custom_table thead th .mt-checkbox.mt-checkbox-outline > span,
+.custom_table thead th .mt-checkbox.mt-checkbox-outline:hover > span {
+    background-color: #fff;
+}
+.custom_table td.empty-tips {
+    text-align: center;
+}
+
+.esys-meta-desc {
+    color: rgba(0,0,0,.45);
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.title_btn_group .esys-meta-desc {
+    margin-left: 20px;
+}
+
+/**
+ * 表格样式覆盖. 原组件样式缺失或不满足。
+ * 待组件修复后删除下面的样式.
+ */
+/*操作列中的按扭隐藏*/
+.dataTables_scrollBody td>[data-locked] {
+    display: none;
+}
+.xyz_datatables_div .DTFC_RightBodyWrapper .DTFC_RightBodyLiner .table tbody tr:last-child {
+    height: 39px !important;
+}
+/*表格中的按扭尺寸高度小1像素*/
+.style_v1 .DTFC_RightBodyWrapper .DTFC_RightBodyLiner .table tbody tr td .btn {
+    padding: 5px 10px;
+}
+
+.style_v1 .form_combination {
+    height: 40px;
+    float: none;
+}
+.base_style_manage_style_v1 .paddingtop8{
+  padding-top: 8px;
+  line-height: normal !important;
+}
+
+.xyz_modal .dialog-mask {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background-color: #000;
+}
+
+.xyz_modal .modal-dialog {
+    z-index: 99
+}
+
+
+/**
+* 表格操作栏
+*/
+
+.esys-action-grid {
+    display: table;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.esys-action-grid .col {
+    white-space: nowrap;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding-right: 10px;
+    width: 10%;
+}
+
+.esys-action-grid .col.last {
+    padding-right: 0;
+    text-align: right;
+}
+.esys-action-grid.mt10{
+    margin-top: 10px;
+}
+
+
+/**
+* 二级tab 右边块（按钮或文字）
+*/
+.tabbable-line {
+    position: relative;
+}
+.tabbable-line > span{
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+
+/**
+ * 带快速选择的日期组件样式.
+ */
+/* .esys-datepicker-tablist {
+    float: left;
+    font-size: 12px;
+    vertical-align: top;
+} */
+.esys-datepicker-tablist span.esys-datepicker-tab {
+    float: left;
+    padding: 0 20px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 28px;
+    border-radius: 0;
+    margin-right: -1px;
+}
+.esys-datepicker-tablist span.esys-datepicker-tab:focus,.esys-datepicker-tablist span.esys-datepicker-tab:hover {
+    background-color:#f2f2f2;
+    color:#454a51;
+    outline:0
+}
+.esys-datepicker-tablist span.current,.esys-datepicker-tablist span.current:focus,.esys-datepicker-tablist span.current:hover{
+    color: #fff  !important;
+    position:relative;
+    z-index:1
+}
+.esys-datepicker-tablist span:first-child.current{
+    border: 1px solid transparent;
+}
+.esys-datepicker-tablist span:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.esys-datepicker-select {
+    float: left;
+    position: relative;
+    vertical-align: middle;
+    margin-right: -1px;
+    z-index:0;
+    width: 240px;
+}
+
+.esys-datepicker-select .xyz_datepicker_range .range_tips {
+    padding-top: 0;
+    height: 30px;
+    line-height: 30px;
+}
+.esys-datepicker-select .xyz_datepicker_range .start_div .input-group .date-input {
+    border-radius: 0;
+}
+.xyz_datepicker_range .end_div .input-group .date-input {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.xyz_datepicker_range .start_time, .xyz_datepicker_range .end_time {
+    height: 30px;
+}
+
+
+/*
+ * 根据标注调整 （写在页尾）
+ * 字体与周围边界误差为2px-3px，根据浏览器渲染不同会有不同，比如标注为15px,实际样式应写为12或13px，才能和设计图中的标注距离一致；
+ */
+ /* 左右区域 边框没有标注 去设计稿中的值#ebebeb */
+ .base_style_manage_style_v1 .left_right_layout .right_layout_wrap{
+   overflow: auto;
+   padding-bottom: 10px;
+   width: calc(100% - 258px);
+ }
+.left_right_layout .left_layout_wrap,
+.left_right_layout .right_layout_wrap{
+    box-shadow: 0 0 0 #e4e4e4;
+    border: 1px solid #ebebeb;
+}
+.esys-datalist .esys-datalist-body > h1{
+    margin-bottom: 15px;
+}
+.base_style_manage_style_v1 .left_right_layout .left_layout_wrap{
+    padding: 10px 2px 10px 15px;
+}
+ /* 表单标题 */
+.shine_form .title_btn_group {
+    height: 32px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    float: none;
+ }
+.shine_form .title_btn_group.mb0{
+    margin-bottom: 0;
+}
+.base_style_manage_style_v1 .section,
+.shine_form .title_btn_group .section {
+    margin: 0 0 6px;
+    font-size: 15px;
+    line-height: 15px;
+}
+.shine_form .title_btn_group .btn {
+    margin-top: -5px;
+}
+.base_style_manage_style_v1 .section em,
+.shine_form .title_btn_group .section em{
+    font-size: 12px !important;
+    color: #999;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: 8px;
+}
+
+/* 表单列 */
+.form_wrap{
+    margin-top: -6px;
+}
+.shine_form .form_wrap .form_wrap_group{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.base_style_manage_style_v1 .form_wrap .form_wrap_group{
+    margin-bottom: 10px;
+}
+.form_wrap .form_wrap_group .form_wrap_group_title {
+    color: #333;
+    font-size: 13px;
+}
+.form_wrap .form_wrap_group .form_wrap_group_content{
+    color: #666;
+    font-size: 13px;
+}
+/* 表单新增 */
+.shine-coverlap-bordered .shine-coverlap-content {
+    margin-bottom: 10px;
+    padding: 15px 15px;
+}
+.shine-coverlap-bordered .shine-coverlap-content {
+    margin-bottom: 10px;
+    padding: 15px 15px;
+    border: 1px solid #ebebeb;
+}
+.form_wrap .form_wrap_group .form_wrap_group_content{
+    margin-left: 10px;
+}
+/* 输入框 */
+.form-control{
+    border: 1px solid  #e1e1e1;
+}
+/* 消除按钮间的空格 */
+.shine-coverlap-button{
+    font-size: 0;
+}
+/* datalist翻页 */
+.mt-list-footer {
+    margin-right: 0;
+}
+/* tab 标签页 */
+/* 规范样式中用padding控制高度，导致字体改为13px后border-bottom显示出来
+ * 设置li的为height:30，非li.active
+ */
+.nav-tabs > li {
+    height: 30px;
+}
+.nav-tabs > li.active{
+    top: 0;
+}
+.nav-pills > li > a,
+.nav-tabs > li > a {
+    font-size: 13px;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+  height: 30px;
+  overflow: hidden;
+}
+/* tab 二级*/
+.portlet:not(.light) .tabbable-line{
+    padding-top: 0;
+}
+.tabbable-line > .nav-tabs > li{
+    margin-right: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.tabbable-line > .nav-tabs > li.active {
+    top: 0;
+}
+.tabbable-line > .nav-tabs > li.active > a:hover {
+  border: none;
+}
+.nav-tabs > li > a:hover{
+    border-color: transparent;
+}
+.base_style_manage_style_v1 .tabbable-line > .nav-tabs > li > a{
+    color: #666;
+}
+.tabbable-line > .nav-tabs > li.active > a:hover {
+  border: none;
+}
+/* 加.base_style_manage_style_v1，避免被  .base_style_manage_style_v1 .nav-tabs > li > a 覆盖*/
+.base_style_manage_style_v1 .tabbable-line > .nav-tabs > li > a {
+  padding: 4px 10px;
+}
+/* alert 警告框组件 */
+.esys-alert{
+    height: 40px;
+    border: 1px solid  #ebebeb;
+    line-height: 40px;
+    font-size: 13px;
+    color: #333;
+    border-radius: 4px;
+    padding: 0 15px;
+}
+.esys-alert > p{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.esys-alert > p i{
+    color: #3b89ff;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.esys-alert > span{
+    float: right;
+}
+
+
+/* 高度自适应 -- 普通新增 */
+.base_style_manage_style_v1 .coverlap_top_content{
+  min-height: calc(100% - 28px)  !important;
+  height: auto !important;
+  padding-bottom: 60px;
+}
+.base_style_manage_style_v1 .coverlap_bottom_btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 0;
+  position: fixed;
+  bottom: 0;
+  left: 6px;
+  right: 10px;
+  background-color: #F5F5F5;
+  font-size: 0;
+}
+.coverlap_bottom_btn:after{
+  display: block;
+  content: '';
+  border-bottom: 1px solid #ebebeb;
+  height: 10px;
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.coverlap_bottom_btn button{
+  margin-right: 10px;
+}
+
+/* 高度自适应 -- 步骤条 */
+.coverlap_top_content{
+  /* overflow: auto;  内部滚动时，文本框的提示块，会绝对定位滚动，偏移了input*/
+}
+.shine-steps-button{
+  position: fixed;
+  bottom: 0;
+  left: 6px;
+  right: 10px;
+  background-color: #F5F5F5;
+  z-index: 9;
+  padding: 10px 0;
+}
+.shine-steps-button:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  border-bottom: 1px solid #ebebeb;
+  z-index: 99;
+}
+.base_style_manage_style_v1 .shine-steps-bordered{
+  padding: 0 !important;
+  padding-bottom: 49px !important;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  min-height: calc(100% - 28px) !important;
+  height: auto !important;
+}
+.shine-steps-bordered::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  right: 10px;
+  height: 8px;
+  background-color: #f5f5f5;
+  border-top: 1px solid  #ebebeb;
+  border-bottom: 1px solid  #ebebeb;
+  z-index:9999;
+}
+.shine-steps-bordered .shine-steps,
+.shine-steps-bordered .shine-steps-content{
+   border: none;
+ }
+.shine-steps-bordered .shine-steps{
+  border-bottom: 1px solid #ebebeb;
+}
+.shine-steps-bordered .shine-steps-content{
+  margin-bottom: 0;
+  padding: 5px 15px 10px;
+}
+.shine-steps{
+  height: 90px !important;
+  position: relative;
+}
+.shine-steps::after{
+  position: absolute;
+  content: '';
+  background-color: #f5f5f5;
+  height: 8px;
+  top: 90px;
+  left: 0;
+}
+.xyz_coverlap.style_v1 .coverlap-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  height: 34px;
+  overflow: hidden;
+}
+.xyz_coverlap.style_v1 .top-return {
+    padding-left: 3px;
+    height: 34px;
+    padding: 6px 0 0 7px;
+}
+.xyz_coverlap .portlet-title {
+    background: inherit;
+}
+/* 遮住右下角因fixed引起的超出部分线条*/
+.portlet-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: block;
+    z-index: 99;
+}
+.base_style_manage_style_v1 .left_right_layout_spacing{
+  padding: 8px 12px 8px 0px;
+  background-color: #f5f5f5;
+}
+.base_style_manage_style_v1 .modal-dialog .modal-content .modal-footer{
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/** 用户穿梭选择框样式 **/
+.esys-transfer-wrap {
+    width: 920px;
+    padding: 10px;
+}
+
+.esys-transfer-wrap .esys-transfer {
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-hd {
+    background-color: #F8F8FA;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 3px 10px;
+    height: 32px;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-hd>span {
+    display: block;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-hd>div {
+    width: 200px;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-hd>div .form-control {
+    height: 24px;
+    padding: 0 0 0 12px;
+}
+.esys-transfer-wrap .esys-transfer .esys-transfer-hd>div .form-control:focus {
+    border-right: none;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-hd>div .btn {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-color: #e1e1e1;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-hd span em {
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-bd {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.esys-transfer-wrap .esys-transfer .esys-transfer-bd,
+.esys-transfer-wrap .esys-transfer-mid {
+    height: 320px;
+    overflow: auto;
+}
+.esys-transfer-wrap .esys-transfer .esys-disabled {
+    color: #909399;
+}
+.esys-transfer-wrap .esys-transfer-mid {
+    overflow: hidden;
+}
+.esys-transfer-wrap .esys-transfer-mid button {
+    margin: 5px 0;
+    text-align: center;
+    position: relative;
+    padding: 5px 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.esys-transfer-wrap .esys-transfer .esys-transfer-bd .pre-remove {
+    display: none;
+}
+/** 菜单权限树样式 **/
+.menu-tree-box {
+    margin-top: 10px;
+    border: 1px solid #ebebeb !important;
+    background-color: #fff;
+    min-height: 200px;
+    width: 100%;
+
+}
+/*权限选择高度样式*/
+.menu-tree-box.select_box{
+    height: 400px;
+}
+/*用户权限高度样式*/
+.menu-tree-box.view_box{
+    height: calc(100% - 80px);
+}
+.roleright_btns {
+    display: none;
+    float: right;
+}
+.shine_form .roleright_btns {
+    display: block;
+}
+.roleright_btns .btn {
+    margin-left: 10px;
+    float: right;
+}
+.base_style_manage_style_v1 .top_bottom_layout_spacing .top_bottom_layout{
+  height: auto;
+  min-height: 100%;
+}
+
+/*  popover & editable */
+.esys-editable .dataTables_scrollBody{
+  position: inherit !important;
+}
+.esys-editable .popover{
+  border: 1px solid #e1e1e1;
+  box-shadow: 0px 0px 6px 0px rgba(35, 42, 59, 0.18);
+}
+.esys-editable .popover.top > .arrow{
+  border-top-color:#e1e1e1;
+}
+.esys-editable .popover-content{
+  padding: 25px 15px;
+}
+.esys-editable .editable-buttons{
+  font-size: 0 !important;
+}
+.esys-editable .editable-buttons .editable-submit,
+.esys-editable .editable-buttons .editable-cancel{
+  margin: 0 !important;
+  padding: 0 12px;
+  height: 30px;
+  margin-right: 10px !important;
+  text-shadow: 0 0 0 #fff;
+  line-height: 18px;
+  border: none !important;
+  border-radius: 4px !important;
+  background-image: none !important;
+}
+.esys-editable .editable-buttons .editable-submit{
+  background-color: #3B89FF !important;
+}
+.esys-editable .editable-buttons .editable-submit:hover{
+  background-color: #69A5FF !important;
+}
+.esys-editable .editable-buttons .editable-cancel{
+  margin-right: 0 !important;
+  background-color: #f7f7f7 !important;
+  border: 1px solid  #e1e1e1 !important;
+  color: #666 !important;
+}
+.esys-editable .editable-buttons .editable-cancel:hover{
+  background-color: #f5f5f5 !important;
+}
+.esys-editable .editable-buttons .editable-submit i::before{
+  content: '确定' !important;
+}
+.esys-editable .editable-buttons .editable-cancel i::before{
+  content: '取消' !important;
+}
+.editable-click,
+a.editable-click,
+a.editable-click:hover{
+  color: #3B89FF !important;
+  border-bottom: solid 1px #3B89FF !important;
+}
+.pull-left.esys-transfer-label::before{
+  content: '';
+  display: inline-block;
+}
+.pull-left.esys-transfer-label > .mt-checkbox{
+  float: left;
+  margin-top: 3px;
+}
+.right-transfer.esys-transfer-label::before{
+    content: '';
+    display: inline-block;
+}
+.right-transfer.esys-transfer-label > .mt-checkbox{
+    float: left;
+    margin-top: 3px;
+}
+
+/* 许可证-左右平分布局 */
+.esys-inner-layout{
+  clear: both;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.esys-inner-layout .esys-inner-layout-right,
+.esys-inner-layout .esys-inner-layout-left{
+  width: calc(50% - 5px);
+  height: calc(100% - 5px);
+  border: 1px solid  #ebebeb;
+  padding: 15px 0 15px 10px;
+  background-color: #fff;
+}
+.esys-inner-layout .esys-inner-layout-right.scroll,
+.esys-inner-layout .esys-inner-layout-left.scroll{
+  overflow: auto;
+}
+.esys-inner-layout .esys-inner-layout-left{
+  float: left;
+}
+.esys-inner-layout .esys-inner-layout-right{
+  float: right;
+}
+.esys-inner-layout .esys-inner-layout-ztree{
+  height: calc(100% - 10px);
+}
+
+
+/* 表单详情 1不能中英文折行 2不能垂直居中  3多行文字居中问题  4display属性被占用  5高度写死超过三行会重叠的（未解决,因为去掉高度行距会不一样） 6最后一行备注跨列 */
+.shine_form div[lbl]{
+  word-break: break-all;
+}
+.shine_form .form_wrap_group_title, .shine_form .form_wrap_group_content{
+  line-height: inherit;
+}
+.shine_form.edit .form_wrap_group_content,
+.shine_form.edit .form_wrap_group_title{
+  /*line-height: 32px;*/
+}
+.form_wrap .form_wrap_group.multi-col{
+  width: 100%;
+}
+
+/* 树, input  等字体 */
+.form-control,
+.xyz_ztree .ztree *{
+  font-size: 13px;
+}
+
+.xyz_ztree .ztree .node_name.esys-node-disabled {
+    color: rgba(0,0,0,.45);
+}
+.xyz_ztree .ztree .node_name.esys-node-highlight {
+    color: #ff0000;
+}
+.xyz_ztree .ztree .node_name.esys-node-enable {
+    color: #000;
+}
+
+/* 多选树不级联的样式优化，取消半选状态 */
+.esys-noncascade .xyz_ztree .ztree li span.button.chk.checkbox_true_part {
+    background-position: -35px 0px;
+}
+
+.esys-noncascade .xyz_ztree .ztree li span.button.chk.checkbox_true_part_focus {
+    background-position: -35px -16px;
+}
+.esys-noncascade .xyz_ztree .ztree li span.button.chk.checkbox_false_part_focus {
+    background-position: -19px -16px;
+}
+.esys-noncascade .xyz_ztree .ztree li span.button.chk.checkbox_false_part {
+    background-position: -19px 0px;
+}
+
+/* xyz-bootstrap-switch 否字居中 */
+.xyz_bootstrap_switch .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default{
+  left: 0;
+}
+
+/* xyz-datatables 样式覆盖  临时解决方案 */
+.upbtn,.downbtn{
+    font-size:20px;
+    font-weight:600;
+    cursor:pointer;
+}
+.upbtn:hover,.downbtn:hover{
+    color:#3b89ff;
+}
+
+
+/* xyz-bootstrap-switch 在 ie11 中高度被span:before的content撑大了    */
+.xyz_bootstrap_switch .bootstrap-switch .bootstrap-switch-handle-on::before,
+.xyz_bootstrap_switch .bootstrap-switch .bootstrap-switch-handle-off::before,
+.xyz_bootstrap_switch .bootstrap-switch .bootstrap-switch-label::before{
+  display: none;
+}
+
+/* 许可证 */
+.condition_top_single .condition_top_content_div{
+  margin-bottom: 6px;
+}
+.condition_top_single .condition_top_right{
+  text-align: right;
+}
+.license-wrap{
+  height: 100% !important;
+}
+.license-wrap .tabbable-line{
+  height: calc(100% - 55px);
+}
+.license-wrap .tabbable-line .xyz_tab_content_div{
+  height: calc(100% - 30px);
+}
+.license-wrap .tabbable-line .xyz_tab_content_div .xyz_tab_content{
+  height: calc(100% - 0px);
+}
+.license-wrap .xyz_ztree{
+  margin-top: -20px;
+}
+.license-wrap .form_wrap .form_wrap_group{
+  min-width:249px;
+}
+.license-wrap .form_wrap .form_wrap_group .form_wrap_group_title{
+  width: 90px;
+}
+.license-wrap .form_wrap .form_wrap_group .form_wrap_group_content{
+  width: calc(100% - 120px);
+}
+
+/* 许可证导入列表显示 1调整行高 2只读 */
+.esys-datalist-wrap.sm .esys-datalist .esys-datalist-body{
+  height: calc(100% - 22px);
+}
+
+.esys-datalist-wrap.sm .esys-datalist .esys-datalist-body>ul>li{
+  padding: 5px 0;
+}
+.esys-datalist-wrap.sm .esys-datalist .esys-datalist-body.scroller{
+  padding:0 10px;
+}
+.esys-datalist-wrap.onlyview .esys-datalist .esys-datalist-body ul li:hover,
+.esys-datalist-wrap.onlyview .esys-datalist .esys-datalist-body ul li.selected {
+  cursor: default;
+  color: #333;
+}
+.esys-datalist-wrap.onlyview .esys-datalist .esys-datalist-body>ul>li {
+  cursor: default;
+}
+.esys-datalist-wrap.sm .esys-datalist .esys-datalist-body>ul>li>i{
+  display: none !important;
+}
+
+/* 没数据 */
+.esys-empty-text{
+  text-align: center;
+  color: #999;
+  padding: 10px;
+  font-size: 13px;
+}
+
+/* 详情页 内容折行 ... */
+.base_style_manage_style_v1 .form_wrap .form_wrap_group .form_wrap_group_content{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: auto !important;  /* 所有content高度都自适应覆盖form_wrap_group.multi_row */
+}
+.base_style_manage_style_v1 .edit .form_wrap  .form_wrap_group .form_wrap_group_content{
+  overflow: inherit;
+}
+/* 表单验证错误时图标显示 */
+.form_wrap .form_wrap_group.has-error .form_wrap_group_content{
+  overflow: inherit;
+}
+.shine_form div[lbl]{
+  white-space: nowrap\0;  /* for ie */
+}
+.popover{
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+/* esys-datalist 有部门树时独立宽度 */
+.esys-datalist-tree .left_layout_wrap{
+  width: 286px !important;
+}
+.esys-datalist-tree .right_layout_wrap{
+  width: calc(100% - 296px) !important;
+}
+
+/*解决网格组件样式修改引起的布局错乱问题*/
+.xyz_datatables_div.table_base{
+    clear:both;
+}
+.xyz_datatables_div .dataTables_wrapper .row {
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.base_style_manage_style_v1 .custom_table tbody tr td{
+    word-break: break-all;
+}
+
+.base_style_manage_style_v1 .modal-dialog .modal-content .modal-body{
+  overflow-x: hidden;
+}
+
+/* 没有权限 */
+.permission-mask-wrapper{
+    background-color: #F5F5F5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    text-align: center;
+    padding: 8px;
+}
+.permission-mask-wrapper .permission-mask{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EBEBEB;
+    position: relative;
+}
+.permission-mask-wrapper .permission-mask > div{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 320px;
+    margin-left: -160px;
+    text-align: center;
+}
+.permission-mask-wrapper .permission-mask > div span{
+    display: block;
+    color: #666;
+    font-size: 16px;
+}
+.permission-mask-wrapper .permission-mask > div i{
+    color: #CEA6FF;
+    font-size: 112px;
+}
+/*ztree背景图标用新的+ — root_open*/
+.xyz_ztree .ztree li span.button.root_open{
+    background-position: -114px -87px !important;
+}
+.xyz_ztree .ztree li span.button.root_close{
+    background-position: -86px -87px !important;
+}

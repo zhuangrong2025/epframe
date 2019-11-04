@@ -2,6 +2,7 @@ define(function(require, exports, module) {
     var $ = require('jquery'),
         xyzAlert = require('xyz-alert'),
         IndexMessage = require('./IndexMessage'),
+        IndexSetting = require('./IndexSetting'),
         ESYS = require('../public/common/ESYS');
         ESYS.require('dialog');
 
@@ -70,6 +71,8 @@ define(function(require, exports, module) {
         this.userInfo = this._CACHE.USER.user;
         this.isContainer && this._renderUserInfo();
         this._changeTheme(this.userInfo.user_theme, false);
+        //创建indexSetting实例，获取最新的主题名称--子模块和父模块直接的相互通信；获取theme在setUserData后
+        this.indexSetting = new IndexSetting({main: this, theme: this.userInfo.user_theme}).render();
     };
 
     //----------------------- 开放接口 - end

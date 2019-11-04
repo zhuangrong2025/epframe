@@ -7,7 +7,7 @@ define(function(require, exports, module) {
         Websocket = require('xyz-websocket'),
         IndexMessageConfig = require('./IndexMessageConfig'),
         IndexMessageSummary = require('./IndexMessageSummary');
-        
+
     //模板引入
     var mainTpl = require('./template/IndexMessage.html');
 
@@ -186,7 +186,7 @@ define(function(require, exports, module) {
             $audio.appendTo('body');
             this.toneEle = document.getElementById('systemToneAudio')
         }
-        
+
         this.toneEle.play();
         this.toneEle.muted = false;
     };

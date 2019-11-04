@@ -1578,9 +1578,17 @@ body {
 }
 
 /* 设置中心 2019-11-1 */
+.index_header_tool ul.tool_list>li.setting>a {
+    display: block;
+    line-height: 45px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 5px;
+}
 .index_setting {
     position: fixed;
-    top: 0;
+    top: 48px;
     right: 0;
     bottom: 0;
     width: 0;
@@ -1596,4 +1604,116 @@ body {
     box-shadow: -3px 0 3px rgba(158, 158, 158, 0.2);
     background-color: #fff;
     color: #333;
+}
+.index_setting.unfold {
+    width: 266px;
+}
+.index_setting_shadow {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99990;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: black;
+}
+.index_setting.unfold+.index_setting_shadow {
+    display: block;
+}
+.index_setting .setting_close {
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    color: #999;
+    cursor: pointer;
+    font-size: 18px;
+}
+.index_setting .index_setting_panel {
+    padding: 0 10px;
+}
+.index_setting .st_title {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 25px 0 15px;
+}
+.index_setting .st_content {
+    position: relative;
+    padding: 0 0 15px;
+}
+.index_setting .st_content:after {
+    content: '';
+    height: 1px;
+    background-color: #e1e1e1;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.index_setting .mlng{
+    padding-bottom: 0;
+}
+.index_setting .mlng ul{
+    max-height: 136px;
+    overflow: auto;
+    margin: 0;
+    padding: 0 0 15px;
+}
+.index_setting .mlng li{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid  #fff;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.index_setting .mlng li:hover,
+.index_setting .mlng li.active{
+    border-radius: 4px;
+    border: 1px solid  #e1e1e1;
+    background-color: #f7f7f7;
+}
+.index_setting_theme ul{
+    margin: 0;
+    padding: 0;
+    height: 23px;
+}
+.index_setting_theme li{
+    float: left;
+    line-height: 32px;
+    margin: 0 15px 0 0;
+}
+.index_setting_theme li .theme{
+    display: block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 3px !important;
+}
+.index_setting_theme li .theme{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px !important;
+    text-decoration: none;
+}
+.index_setting_theme li a.theme.blue{
+    background-color: #3581FF !important;
+}
+.index_setting_theme li a.theme.orange{
+    background-color: #ff7300 !important;
+}
+.index_setting_theme li a i{
+    display: none;
+    color: #fff;
+    font-size: 11px;
+}
+.index_setting_theme li a.active i{
+    display: block;
 }
